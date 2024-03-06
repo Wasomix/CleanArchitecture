@@ -16,7 +16,7 @@ namespace WebApp.Controllers
         }
 
         [HttpGet(Name = "GetEmployeeById")]
-        public async Task<EmployeeDto> GetEmployeeById(Guid EmployeeId)
+        public async Task<EmployeeDto> GetEmployeeById(int EmployeeId)
         {
             //return _mediator.Send()
             return await Task.FromResult(new EmployeeDto()
